@@ -11,7 +11,7 @@
                     <td width="3%">
                         <img src="images/settings.gif" width="24" height="24" border="0" alt="Settings" style="margin-top: 3px;" />&nbsp;
                     </td>
-                    <td><h2><?php $this->_e("Settings: Edit Site User"); ?></h2></td>
+                    <td><h2>Settings: Edit Site User</h2></td>
                 </tr>
             </table>
 
@@ -27,7 +27,7 @@
                 <table class="editTable" width="600">
                     <tr>
                         <td class="tdVertical">
-                            <label><?php $this->_e("First Name:"); ?></label>
+                            <label id="firstNameLabel" for="firstName">First Name:</label>
                         </td>
                         <td class="tdData">
                             <input type="text" class="inputbox" id="firstName" name="firstName" value="<?php $this->_($this->data['firstName']); ?>" style="width: 150px;" />&nbsp;*
@@ -36,7 +36,7 @@
 
                     <tr>
                         <td class="tdVertical">
-                            <label><?php $this->_e("Last Name:"); ?></label>
+                            <label id="lastNameLabel" for="lastName">Last Name:</label>
                         </td>
                         <td class="tdData">
                             <input type="text" class="inputbox" id="lastName" name="lastName" value="<?php $this->_($this->data['lastName']); ?>" style="width: 150px;" />&nbsp;*
@@ -45,7 +45,7 @@
 
                     <tr>
                         <td class="tdVertical">
-                            <label id="emailLabel" for="email">><?php $this->_e("E-Mail:"); ?></label>
+                            <label id="emailLabel" for="email">E-Mail:</label>
                         </td>
                         <td class="tdData">
                             <input type="text" class="inputbox" id="email" name="email" value="<?php $this->_($this->data['email']); ?>" style="width: 150px;" />
@@ -54,7 +54,7 @@
 
                     <tr>
                         <td class="tdVertical">
-                            <label id="usernameLabel" for="username">><?php $this->_e("Username:"); ?></label>
+                            <label id="usernameLabel" for="username">Username:</label>
                         </td>
                         <td class="tdData">
                             <input type="text" class="inputbox" id="username" name="username" value="<?php $this->_($this->data['username']); ?>" style="width: 150px;" />&nbsp;*
@@ -63,7 +63,7 @@
 
                     <tr>
                         <td class="tdVertical">
-                            <label id="notesLabel" for="notes">><?php $this->_e("Access Level:"); ?></label>
+                            <label id="notesLabel" for="notes">Access Level:</label>
                         </td>
                         <td class="tdData">
                             <?php foreach ($this->accessLevels as $accessLevel): ?>
@@ -82,7 +82,7 @@
                     </tr>
 
                     <tr>
-                        <td class="tdVertical">><?php $this->_e("Access Description:"); ?></td>
+                        <td class="tdVertical">Access Description:</td>
                         <td class="tdData">
                             <span id="userAccessStatus" style='font-size: smaller'>
                                 <?php if ($this->cannotEnableMessage): ?>
@@ -112,7 +112,7 @@
                             </td>
                         </tr>
                         <tr>
-                            <td class="tdVertical">><?php $this->_e("Role Description:"); ?></td>
+                            <td class="tdVertical">Role Description:</td>
                             <td class="tdData">
                                 <span id="userRoleDesc" style='font-size: smaller'><?php $this->_($roleDesc); ?></span>
                             </td>
@@ -149,7 +149,7 @@
 
                     <tr id="passwordResetElement2" style="display:none;">
                         <td class="tdVertical">
-                            <label id="password1Label" for="password1">><?php $this->_e("New Password:"); ?></label>
+                            <label id="password1Label" for="password1">New Password:</label>
                         </td>
                         <td class="tdData">
                                 <input type="password" class="inputbox" id="password1" name="password1" style="width: 150px;" />&nbsp;*
@@ -158,7 +158,7 @@
 
                     <tr id="passwordResetElement3" style="display:none;">
                         <td class="tdVertical">
-                            <label id="password2Label" for="password2">><?php $this->_e("Retype Password:"); ?></label>
+                            <label id="password2Label" for="password2">Retype Password:</label>
                         </td>
                         <td class="tdData">
                                 <input type="password" class="inputbox" id="password2" name="password2" style="width: 150px;" />&nbsp;*
@@ -166,9 +166,9 @@
                     </tr>
 
                 </table>
-                <input type="submit" class="button" name="submit" id="submit" value="<?php echo _t('Save'); ?>" />&nbsp;
-                <input type="reset"  class="button" name="reset"  id="reset"  value="<?php echo _t('Reset'); ?>" onclick="document.getElementById('userAccessStatus').innerHTML='<?php $this->_($this->data['accessLevelLongDescription']); ?>'" />&nbsp;
-                <input type="button" class="button" name="back"   id="back"   value="<?php echo _t('Cancel'); ?>" onclick="javascript:goToURL('<?php echo(CATSUtility::getIndexName()); ?>?m=settings&amp;a=showUser&amp;userID=<?php $this->_($this->data['userID']); ?>');" />
+                <input type="submit" class="button" name="submit" id="submit" value="Save" />&nbsp;
+                <input type="reset"  class="button" name="reset"  id="reset"  value="Reset" onclick="document.getElementById('userAccessStatus').innerHTML='<?php $this->_($this->data['accessLevelLongDescription']); ?>'" />&nbsp;
+                <input type="button" class="button" name="back"   id="back"   value="Cancel" onclick="javascript:goToURL('<?php echo(CATSUtility::getIndexName()); ?>?m=settings&amp;a=showUser&amp;userID=<?php $this->_($this->data['userID']); ?>');" />
             </form>
         </div>
     </div>

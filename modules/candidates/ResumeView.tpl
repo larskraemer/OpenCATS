@@ -3,11 +3,11 @@
     <head>
         <?php if (!empty($this->data)): ?>
             <title>
-                <?php echo _t('Candidates'); ?> - <?php echo _t('Preview'); ?>
+                Candidates - Preview
                 <?php $this->_($this->data['firstName'] . ' ' . $this->data['lastName']); ?>
             </title>
         <?php else: ?>
-            <title><?php echo _t('Candidates'); ?> - <?php echo _t('Preview'); ?> (<?php echo _t('Error'); ?>)</title>
+            <title>Candidates - Preview (Error)</title>
         <?php endif; ?>
     </head>
 

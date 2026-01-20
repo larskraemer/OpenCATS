@@ -10,7 +10,7 @@
 * as published by the Free Software Foundation.
 */
 ?>
-<?php TemplateUtility::printModalHeader('Candidates', array(), _t('Select duplicate to this Candidate')); ?>
+<?php TemplateUtility::printModalHeader('Candidates', array(), 'Select duplicate to this Candidate'); ?>
 
     <?php if (!$this->isFinishedMode): ?>
         <p>Search for a candidate below, and then click on the candidate name to link

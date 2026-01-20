@@ -31,10 +31,10 @@
 
                         <table class="sortable" style="margin: 0 0 4px 0;">
                             <tr>
-                                <th><?php $this->_e("Name"); ?></th>
+                                <th align="left" style="font-size:11px;">Name</th>
                                 <th align="left" style="font-size:11px;">Company</th>
                                 <th align="left" style="font-size:11px;">Recruiter</th>
-                                <th><?php $this->_e("Date"); ?></th>
+                                <th align="left" style="font-size:11px;">Date</th>
                             </tr>
                             <?php foreach($this->placedRS as $index => $data): ?>
                             <tr class="<?php TemplateUtility::printAlternatingRowClass($index); ?>">

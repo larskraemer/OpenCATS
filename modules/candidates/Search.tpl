@@ -11,11 +11,11 @@
                     <td width="3%">
                         <img src="images/candidate.gif" width="24" height="24" border="0" alt="Candidates" style="margin-top: 3px;" />&nbsp;
                     </td>
-                    <td><h2><?php $this->_e("Candidates: Search Candidates"); ?></h2></td>
+                    <td><h2>Candidates: Search Candidates</h2></td>
                 </tr>
             </table>
 
-            <p class="note"><?php $this->_e("Search Candidates"); ?></p>
+            <p class="note">Search Candidates</p>
 
             <table class="searchTable" id="searchTable ">
                 <tr>
@@ -27,16 +27,16 @@
 
                             <?php TemplateUtility::printSavedSearch($this->savedSearchRS); ?>
 
-                            <label id="searchModeLabel" for="searchMode"><?php $this->_e("Search By:"); ?></label>&nbsp;
+                            <label id="searchModeLabel" for="searchMode">Search By:</label>&nbsp;
                             <select id="searchMode" name="mode" onclick="advancedSearchConsider();" class="selectBox">
-                                <option value="searchByFullName"<?php if ($this->mode == "searchByFullName"): ?> selected<?php endif; ?>><?php $this->_e("Candidate Name"); ?></option>
-                                <option value="searchByResume"<?php if ($this->mode == "searchByResume" || empty($this->mode)): ?> selected<?php endif; ?>><?php $this->_e("Resume Keywords"); ?></option>
-                                <option value="searchByKeySkills"<?php if ($this->mode == "searchByKeySkills"): ?> selected<?php endif; ?>><?php $this->_e("Key Skills"); ?></option>
-                                <option value="searchByCity"<?php if ($this->mode == "searchByCity"): ?> selected<?php endif; ?>><?php $this->_e("City"); ?></option>
-                                <option value="phoneNumber"<?php if ($this->mode == "phoneNumber"): ?> selected<?php endif; ?>><?php $this->_e("Phone Number"); ?></option>
+                                <option value="searchByFullName"<?php if ($this->mode == "searchByFullName"): ?> selected<?php endif; ?>>Candidate Name</option>
+                                <option value="searchByResume"<?php if ($this->mode == "searchByResume" || empty($this->mode)): ?> selected<?php endif; ?>>Resume Keywords</option>
+                                <option value="searchByKeySkills"<?php if ($this->mode == "searchByKeySkills"): ?> selected<?php endif; ?>>Key Skills</option>
+                                <option value="searchByCity"<?php if ($this->mode == "searchByCity"): ?> selected<?php endif; ?>>City</option>
+                                <option value="phoneNumber"<?php if ($this->mode == "phoneNumber"): ?> selected<?php endif; ?>>Phone Number</option>
                             </select>&nbsp;
                             <input type="text" class="inputbox" id="searchText" name="wildCardString" value="<?php if (!empty($this->wildCardString)) $this->_($this->wildCardString); ?>" style="width:250px" />&nbsp;*&nbsp;
-                            <input type="submit" class="button" id="searchCandidates" name="searchCandidates" value="<?php echo _t('Search'); ?>" />
+                            <input type="submit" class="button" id="searchCandidates" name="searchCandidates" value="Search" />
                             <?php TemplateUtility::printAdvancedSearch('searchByKeySkills,searchByResume'); ?>
                         </form>
                     </td>

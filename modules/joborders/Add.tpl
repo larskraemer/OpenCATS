@@ -11,7 +11,7 @@
                     <td width="3%">
                         <img src="images/job_orders.gif" width="24" height="24" border="0" alt="Job Orders" style="margin-top: 3px;" />&nbsp;
                     </td>
-                    <td><h2><?php $this->_e("Job Orders: Add Job Order"); ?></h2></td>
+                    <td><h2>Job Orders: Add Job Order</h2></td>
                 </tr>
             </table>
 
@@ -34,7 +34,7 @@
                     <table class="editTable" width="700">
                         <tr>
                             <td class="tdVertical">
-                                <label><?php $this->_e("Title:"); ?></label>
+                                <label id="titleLabel" for="title">Title:</label>
                             </td>
                             <td class="tdData">
                                 <input type="text" tabindex="1" class="inputbox" id="title" name="title" style="width: 150px;" <?php if(isset($this->jobOrderSourceRS['title'])): ?>value="<?php $this->_($this->jobOrderSourceRS['title']); ?>"<?php endif; ?> />&nbsp;*
@@ -83,7 +83,7 @@
 
                         <tr>
                             <td class="tdVertical">
-                                <label><?php $this->_e("Department:"); ?></label>
+                                <label id="departmentLabel" for="department">Department:</label>
                             </td>
                             <td class="tdData">
                                 <select id="departmentSelect" name="department" class="inputbox" style="width: 150px;" onchange="if (this.value == 'edit') { listEditor('Departments', 'departmentSelect', 'departmentsCSV', false); this.value = '(none)'; } if (this.value == 'nullline') { this.value = '(none)'; }">

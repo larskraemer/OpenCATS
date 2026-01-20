@@ -11,7 +11,7 @@
                     <td width="3%">
                         <img src="images/candidate.gif" width="24" height="24" border="0" alt="Candidates" style="margin-top: 3px;" />&nbsp;
                     </td>
-                    <td><h2><?php $this->_e("Candidates: Edit"); ?></h2></td>
+                    <td><h2>Candidates: Edit</h2></td>
                </tr>
             </table>
 
@@ -34,7 +34,7 @@
                     
                     <tr>
                         <td class="tdVertical">
-                            <label><?php $this->_e("First Name:"); ?></label>
+                            <label id="firstNameLabel" for="firstName">First Name:</label>
                         </td>
                         <td class="tdData">
                             <input type="text" class="inputbox" id="firstName" name="firstName" value="<?php $this->_($this->data['firstName']); ?>" style="width: 150px;" />&nbsp;*
@@ -52,7 +52,7 @@
 
                     <tr>
                         <td class="tdVertical">
-                            <label><?php $this->_e("Last Name:"); ?></label>
+                            <label id="lastNameLabel" for="lastName">Last Name:</label>
                         </td>
                         <td class="tdData">
                             <input type="text" class="inputbox" id="lastName" name="lastName" value="<?php $this->_($this->data['lastName']); ?>" style="width: 150px;" />&nbsp;*

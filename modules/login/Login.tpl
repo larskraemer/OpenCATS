@@ -3,7 +3,7 @@
 "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html>
     <head>
-        <title>opencats - <?php _te('Login'); ?></title>
+        <title>opencats - Login</title>
         <meta http-equiv="Content-Type" content="text/html; charset=<?php echo(HTML_ENCODING); ?>" />
         <style type="text/css" media="all">@import "modules/login/login.css";</style>
         <script type="text/javascript" src="js/lib.js"></script>
@@ -35,7 +35,7 @@
 
                     <?php if (ENABLE_DEMO_MODE && !($this->siteName != '' && $this->siteName != 'choose') || ($this->siteName == 'demo')): ?>
                         <br /><br />
-                        <a href="javascript:void(0);" onclick="demoLogin(); return false;"><?php _te('Login to Demo Account'); ?></a><br />
+                        <a href="javascript:void(0);" onclick="demoLogin(); return false;">Login to Demo Account</a><br />
                     <?php endif; ?>
                 </div>
 
@@ -46,7 +46,7 @@
                         <div id="subFormBlock">
                             <?php if ($this->siteName != '' && $this->siteName != 'choose'): ?>
                                 <?php if ($this->siteNameFull == 'error'): ?>
-                                    <label><?php _te('This site does not exist. Please check the URL and try again.'); ?></label>
+                                    <label>This site does not exist. Please check the URL and try again.</label>
                                     <br />
                                     <br />
                                 <?php else: ?>
@@ -57,19 +57,19 @@
                             <?php endif; ?>
 
                             <?php if ($this->siteNameFull != 'error'): ?>
-                                <label id="usernameLabel" for="username"><?php _te('Username'); ?></label><br />
+                                <label id="usernameLabel" for="username">Username</label><br />
                                 <input name="username" id="username" class="login-input-box" value="<?php if (isset($this->username)) $this->_($this->username); ?>" />
                                 <br />
 
-                                <label id="passwordLabel" for="password"><?php _te('Password'); ?></label><br />
+                                <label id="passwordLabel" for="password">Password</label><br />
                                 <input type="password" name="password" id="password" class="login-input-box" />
                                 <br />
 
-                                <input type="submit" class="button" value="<?php _te('Login'); ?>" />
-                                <input type="reset"  id="reset" name="reset"  class="button" value="<?php _te('Reset'); ?>" />
+                                <input type="submit" class="button" value="Login" />
+                                <input type="reset"  id="reset" name="reset"  class="button" value="Reset" />
                             <?php else: ?>
                                 <br />
-                                <a href="javascript:void(0);" onclick="demoLogin(); return false;"><?php _te('Login to Demo Account'); ?></a><br />
+                                <a href="javascript:void(0);" onclick="demoLogin(); return false;">Login to Demo Account</a><br />
                             <?php endif; ?>
                             <br /><br />
                         </div>

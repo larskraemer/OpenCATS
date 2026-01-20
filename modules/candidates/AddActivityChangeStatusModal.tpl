@@ -75,7 +75,7 @@
 
             <tr id="statusTR" <?php if ($this->onlyScheduleEvent): ?>style="display:none;"<?php endif; ?>>
                 <td class="tdVertical">
-                    <label><?php $this->_e("Status:"); ?></label>
+                    <label id="statusIDLabel" for="statusID">Status:</label>
                 </td>
                 <td class="tdData">
                     <input type="checkbox" name="changeStatus" id="changeStatus" style="margin-left: 0px" onclick="AS_onChangeStatusChange('changeStatus', 'statusID', 'changeStatusSpanB');"<?php if ($this->selectedJobOrderID == -1 || $this->onlyScheduleEvent): ?> disabled<?php endif; ?> />

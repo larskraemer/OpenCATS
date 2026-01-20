@@ -11,11 +11,11 @@
                     <td width="3%">
                         <img src="images/contact.gif" width="24" height="24" border="0" alt="Contacts" style="margin-top: 3px;" />&nbsp;
                     </td>
-                    <td><h2><?php $this->_e("Contacts: Cold Call List"); ?></h2></td>
+                    <td><h2>Contacts: Cold Call List</h2></td>
                 </tr>
             </table>
         
-            <p class="note"><?php $this->_e("Cold Call List (Only Contacts with Phone Numbers)"); ?></p>
+            <p class="note">Cold Call List (Only Contacts with Phone Numbers)</p>
         
             <?php if (!empty($this->rs)): ?>
                 <table class="sortable" rules="all" onmouseover="javascript:trackTableHighlight(event)">

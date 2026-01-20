@@ -40,7 +40,6 @@
 /* Do we need to run the installer? */
 
 include_once('./config.php');
-include_once('./config_language.php'); /* Language/localization configuration */
 
 if (!file_exists('INSTALL_BLOCK') && !isset($_POST['performMaintenence']))
 {
@@ -69,8 +68,6 @@ include_once(LEGACY_ROOT . '/lib/Session.php'); /* Depends: MRU, Users, Database
 include_once(LEGACY_ROOT . '/lib/UserInterface.php'); /* Depends: Template, Session. */
 include_once(LEGACY_ROOT . '/lib/ModuleUtility.php'); /* Depends: UserInterface */
 include_once(LEGACY_ROOT . '/lib/TemplateUtility.php'); /* Depends: ModuleUtility, Hooks */
-include_once(LEGACY_ROOT . '/lib/Translations.php'); /* Localization library */
-include_once(LEGACY_ROOT . '/lib/TranslationHelpers.php'); /* Translation helper functions */
 
 
 /* Give the session a unique name to avoid conflicts and start the session. */

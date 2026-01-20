@@ -14,7 +14,7 @@ use OpenCATS\UI\QuickActionMenu;
                     <td width="3%">
                         <img src="images/companies.gif" width="24" height="24" border="0" alt="Companies" style="margin-top: 3px;" />&nbsp;
                     </td>
-                    <td><h2><?php $this->_e("Companies: Company Details"); ?></h2></td>
+                    <td><h2>Companies: Company Details</h2></td>
                </tr>
             </table>
 
@@ -244,9 +244,9 @@ use OpenCATS\UI\QuickActionMenu;
                     <th align="left" width="30" nowrap="nowrap">ID</th>
                     <th align="left" width="200">Title</th>
                     <th align="left" width="15">Type</th>
-                    <th><?php $this->_e("Status"); ?></th>
-                    <th><?php $this->_e("Created"); ?></th>
-                    <th><?php $this->_e("Modified"); ?></th>
+                    <th align="left" width="15">Status</th>
+                    <th align="left" width="60">Created</th>
+                    <th align="left" width="60">Modified</th>
                     <th align="left" width="60">Start</th>
                     <th align="left" width="15">Age</th>
                     <th align="left" width="10">S</th>
@@ -303,7 +303,7 @@ use OpenCATS\UI\QuickActionMenu;
                     <th align="left">Department</th>
                     <th align="left" nowrap="nowrap">Work Phone</th>
                     <th align="left" nowrap="nowrap">Cell Phone</th>
-                    <th><?php $this->_e("Created"); ?></th>
+                    <th align="left">Created</th>
                     <th align="left">Owner</th>
                     <th align="center">Action</th>
                 </tr>

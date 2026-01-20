@@ -1,5 +1,5 @@
 <?php /* $Id: CreateAttachmentModal.tpl 3093 2007-09-24 21:09:45Z brian $ */ ?>
-<?php TemplateUtility::printModalHeader('Candidates', array('modules/candidates/validator.js'), _t('Create Candidate Attachment')); ?>
+<?php TemplateUtility::printModalHeader('Candidates', array('modules/candidates/validator.js'), 'Create Candidate Attachment'); ?>
 
     <?php if (!$this->isFinishedMode){ ?>
         <form name="createAttachmentForm" id="createAttachmentForm" action="<?php echo(CATSUtility::getIndexName()); ?>?m=candidates&amp;a=createAttachment" enctype="multipart/form-data" method="post" onsubmit="return checkCreateAttachmentForm(document.createAttachmentForm);">
@@ -8,19 +8,19 @@
 
             <table class="editTable">
                 <tr>
-                    <td class="tdVertical"><?php $this->_e("Attachment:"); ?></td>
+                    <td class="tdVertical">Attachment:</td>
                     <td class="tdData"><input type="file" id="file" name="file" /></td>
                 </tr>
                 <tr>
-                    <td class="tdVertical"><?php $this->_e("Resume:"); ?></td>
+                    <td class="tdVertical">Resume:</td>
                     <td>
-                        <input type="radio" id="resume" name="resume" value="1" checked="checked" /><?php $this->_e("Yes"); ?>
-                        <input type="radio" id="resume" name="resume" value="0" /><?php $this->_e("No"); ?>
+                        <input type="radio" id="resume" name="resume" value="1" checked="checked" />Yes
+                        <input type="radio" id="resume" name="resume" value="0" />No
                     </td>
                 </tr>
             </table>
-            <input type="submit" class="button" name="submit" id="submit" value="<?php echo _t('Create Attachment'); ?>" />&nbsp;
-            <input type="button" class="button" name="cancel" value="<?php echo _t('Cancel'); ?>" onclick="parentHidePopWin();" />
+            <input type="submit" class="button" name="submit" id="submit" value="Create Attachment" />&nbsp;
+            <input type="button" class="button" name="cancel" value="Cancel" onclick="parentHidePopWin();" />
         </form>
     <?php } else { ?>
         <?php if(isset($this->resumeText) && $this->resumeText == ''): ?>

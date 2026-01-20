@@ -11,7 +11,7 @@
                     <td width="3%">
                         <img src="images/settings.gif" width="24" height="24" border="0" alt="Settings" style="margin-top: 3px;" />&nbsp;
                     </td>
-                    <td><h2><?php $this->_e("Settings: My Profile"); ?></h2></td>
+                    <td><h2>Settings: My Profile</h2></td>
                 </tr>
             </table>
 
@@ -55,7 +55,7 @@
 
                     <tr>
                         <td>
-                            <label id="newPasswordLabel" for="newPassword">><?php $this->_e("New Password:"); ?></label>&nbsp;
+                            <label id="newPasswordLabel" for="newPassword">New Password:</label>&nbsp;
                         </td>
                         <td>
                             <input type="password" class="inputbox" id="newPassword" name="newPassword" />&nbsp;*
@@ -75,8 +75,8 @@
                         <td colspan="2">
                             <br />
                             <input type="submit" class="button" id="changePassword" name="changePassword" value="Change Password" />
-                            <input type="reset"  class="button" id="reset"          name="reset"          value="<?php echo _t('Reset'); ?>" />
-                            <input type="button" name="back" class = "button" value="<?php echo _t('Back'); ?>" onclick="document.location.href='<?php echo(CATSUtility::getIndexName()); ?>?m=settings';" />
+                            <input type="reset"  class="button" id="reset"          name="reset"          value="Reset" />
+                            <input type="button" name="back" class = "button" value="Back" onclick="document.location.href='<?php echo(CATSUtility::getIndexName()); ?>?m=settings';" />
                        </td>
                     </tr>
                 </table>

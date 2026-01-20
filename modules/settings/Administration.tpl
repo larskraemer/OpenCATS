@@ -23,11 +23,11 @@
                     <td width="3%">
                         <img src="images/settings.gif" width="24" height="24" border="0" alt="Settings" style="margin-top: 3px;" />&nbsp;
                     </td>
-                    <td><h2><?php $this->_e("Settings: Administration"); ?></h2></td>
+                    <td><h2>Settings: Administration</h2></td>
                 </tr>
             </table>
 
-                        <p class="noteUnsized"><?php $this->_e("Site Management"); ?></p>
+                        <p class="noteUnsized">Site Management</p>
 
                         <table class="searchTable" width="100%">
                             <tr>

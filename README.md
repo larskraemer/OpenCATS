@@ -4,18 +4,6 @@
 
 OpenCATS is a Free and Open Source Candidate/Applicant Tracking System designed for Recruiters to manage recruiting process from job posting, candidate application, through to candidate selection and submission.
 
-## 🌐 Language Support
-
-**NEW**: German translation support has been added! The application now includes:
-- ✅ Complete German translation of login pages and wizard
-- ✅ 200+ translated UI strings
-- ✅ Configurable language system
-- ✅ Easy-to-extend translation framework
-
-To enable German language, edit `config_language.php` and set `CATS_LANGUAGE` to `'de'`.
-
-See [GERMAN_TRANSLATION_README.md](GERMAN_TRANSLATION_README.md) for complete language support documentation.
-
 More details: 
 
 <http://www.opencats.org>

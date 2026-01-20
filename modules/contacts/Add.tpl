@@ -11,7 +11,7 @@
                     <td width="3%">
                         <img src="images/contact.gif" width="24" height="24" border="0" alt="Contacts" style="margin-top: 3px;" />&nbsp;
                     </td>
-                    <td><h2><?php $this->_e("Contacts: Add Contact"); ?></h2></td>
+                    <td><h2>Contacts: Add Contact</h2></td>
                 </tr>
             </table>
 
@@ -25,7 +25,7 @@
                             <table class="editTable" width="100%" height="285">
                                 <tr>
                                     <td class="tdVertical">
-                                        <label><?php $this->_e("First Name:"); ?></label>
+                                        <label id="firstNameLabel" for="firstName">First Name:</label>
                                     </td>
                                     <td class="tdData">
                                         <input type="text" name="firstName" id="firstName" class="inputbox" style="width: 150px" />&nbsp;*
@@ -34,7 +34,7 @@
 
                                 <tr>
                                     <td class="tdVertical">
-                                        <label><?php $this->_e("Last Name:"); ?></label>
+                                        <label id="lastNameLabel" for="lastName">Last Name:</label>
                                     </td>
                                     <td class="tdData">
                                         <input type="text" name="lastName" id="lastName" class="inputbox" style="width: 150px" />&nbsp;*
@@ -60,7 +60,7 @@
 
                                 <tr>
                                     <td class="tdVertical">
-                                        <label><?php $this->_e("Title:"); ?></label>
+                                        <label id="titleLabel" for="title">Title:</label>
                                     </td>
                                     <td class="tdData">
                                         <input type="text" name="title" id="title" class="inputbox" style="width: 150px" />&nbsp;*
@@ -69,7 +69,7 @@
 
                                 <tr>
                                     <td class="tdVertical">
-                                        <label><?php $this->_e("Department:"); ?></label>
+                                        <label id="departmentLabel" for="department">Department:</label>
                                     </td>
                                     <td class="tdData">
                                         <select id="departmentSelect" name="department" class="inputbox" style="width: 150px;" onchange="if (this.value == 'edit') { listEditor('Departments', 'departmentSelect', 'departmentsCSV', false); this.value = '(none)'; } if (this.value == 'nullline') { this.value = '(none)'; }">

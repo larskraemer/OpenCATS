@@ -1,5 +1,5 @@
 <?php /* $Id: ConsiderSearchModal.tpl 3093 2007-09-24 21:09:45Z brian $ */ ?>
-<?php TemplateUtility::printModalHeader('Candidates', array(), _t('Add Candidates to Job Order')); ?>
+<?php TemplateUtility::printModalHeader('Candidates', array(), 'Add Candidates to Job Order'); ?>
 
     <?php if (!$this->isFinishedMode): ?>
         <p>Search for a job order below, and then click on the job title to add

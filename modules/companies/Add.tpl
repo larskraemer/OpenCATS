@@ -11,7 +11,7 @@
                     <td width="3%">
                         <img src="images/companies.gif" width="24" height="24" border="0" alt="Companies" style="margin-top: 3px;" />&nbsp;
                     </td>
-                    <td><h2><?php $this->_e("Companies: Add Company"); ?></h2></td>
+                    <td><h2>Companies: Add Company</h2></td>
                 </tr>
             </table>
 
@@ -22,7 +22,7 @@
                 <table class="editTable">
                     <tr>
                         <td class="tdVertical">
-                            <label><?php $this->_e("Company Name:"); ?></label>
+                            <label id="nameLabel" for="name">Company Name:</label>
                         </td>
                         <td class="tdData" width="250">
                             <input type="text" name="name" id="name" class="inputbox" style="width: 150px" />&nbsp;*

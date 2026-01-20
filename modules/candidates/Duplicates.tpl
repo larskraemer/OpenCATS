@@ -30,7 +30,7 @@
                     <td width="3%">
                         <img src="images/candidate.gif" width="24" height="24" alt="Candidates" style="border: none; margin-top: 3px;" />&nbsp;
                     </td>
-                    <td><h2><?php $this->_e("Duplicates: Home"); ?></h2></td>
+                    <td><h2>Duplicates: Home</h2></td>
                     <td align="right">
                         <form name="candidatesViewSelectorForm" id="candidatesViewSelectorForm" action="<?php echo(CATSUtility::getIndexName()); ?>" method="get">
                             <input type="hidden" name="m" value="candidates" />

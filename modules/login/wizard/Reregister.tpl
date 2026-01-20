@@ -17,11 +17,11 @@ input.licenseKey { border: 1px solid #0C519D; padding: 5px; width: 500px; }
             CATS like our Monster toolbar, resume import, careers website, and more!
             <br /><br />
 
-            <b><?php _te('Need a license key?'); ?></b> <a href="http://www.catsone.com/?a=license_key" target="_blank"><?php _te('Register here'); ?></a>.
+            <b>Need a license key?</b> <a href="http://www.catsone.com/?a=license_key" target="_blank">Register here</a>.
 
             <p />
 
-            <b><?php _te('Enter your open source or professional license key:'); ?></b>
+            <b>Enter your open source or professional license key:</b>
             <p />
             <input type="text" name="key" id="key" value="<?php if (defined('LICENSE_KEY') && LICENSE_KEY != '') echo LICENSE_KEY; ?>" class="licenseKey" />
             <p />

@@ -15,7 +15,7 @@ use OpenCATS\UI\QuickActionMenu;
                     <td width="3%">
                         <img src="images/contact.gif" width="24" height="24" border="0" alt="Contacts" style="margin-top: 3px;" />&nbsp;
                     </td>
-                    <td><h2><?php $this->_e("Contacts: Contact Details"); ?></h2></td>
+                    <td><h2>Contacts: Contact Details</h2></td>
                 </tr>
             </table>
 
@@ -226,9 +226,9 @@ use OpenCATS\UI\QuickActionMenu;
                 <tr>
                     <th align="left" width="200">Title</th>
                     <th align="left" width="15">Type</th>
-                    <th><?php $this->_e("Status"); ?></th>
-                    <th><?php $this->_e("Created"); ?></th>
-                    <th><?php $this->_e("Modified"); ?></th>
+                    <th align="left" width="15">Status</th>
+                    <th align="left" width="60">Created</th>
+                    <th align="left" width="60">Modified</th>
                     <th align="left" width="60">Start</th>
                     <th align="right" width="15">Age</th>
                     <th align="right" width="10">S</th>
@@ -263,7 +263,7 @@ use OpenCATS\UI\QuickActionMenu;
             <p class="note">Activity</p>
             <table id="activityTable" class="sortable">
                 <tr>
-                    <th><?php $this->_e("Date"); ?></th>
+                    <th align="left" width="125">Date</th>
                     <th align="left" width="90">Type</th>
                     <th align="left" width="90">Entered</th>
                     <th align="left" width="250">Regarding</th>

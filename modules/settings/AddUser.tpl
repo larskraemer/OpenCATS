@@ -11,12 +11,12 @@
                     <td width="3%" valign="bottom">
                         <img src="images/settings.gif" width="24" height="24" border="0" alt="Settings" style="margin-top: 3px;" />&nbsp;
                     </td>
-                    <td valign="bottom"><h2><?php $this->_e("Settings: Add Site User"); ?></h2></td>
+                    <td valign="bottom"><h2>Settings: Add Site User</h2></td>
                 </tr>
             </table>
 
             <p class="note">
-                <span style="float: left;"><?php $this->_e("Add Site User"); ?></span>
+                <span style="float: left;">Add Site User</span>
                 <span style="float: right;"><a href='<?php echo(CATSUtility::getIndexName()); ?>?m=settings&amp;a=manageUsers'>Back to User Management</a></span>&nbsp;
             </p>
 
@@ -29,7 +29,7 @@
                             <table class="editTable" width="550">
                                 <tr>
                                     <td class="tdVertical">
-                                        <label><?php $this->_e("First Name:"); ?></label>
+                                        <label id="firstNameLabel" for="firstName">First Name:</label>
                                     </td>
                                     <td class="tdData">
                                         <input type="text" class="inputbox" id="firstName" name="firstName" style="width: 150px;" />&nbsp;*
@@ -38,7 +38,7 @@
 
                                 <tr>
                                     <td class="tdVertical">
-                                        <label><?php $this->_e("Last Name:"); ?></label>
+                                        <label id="lastNameLabel" for="lastName">Last Name:</label>
                                     </td>
                                     <td class="tdData">
                                         <input type="text" class="inputbox" id="lastName" name="lastName" style="width: 150px;" />&nbsp;*
@@ -47,7 +47,7 @@
 
                                 <tr>
                                     <td class="tdVertical">
-                                        <label id="emailLabel" for="username"><?php $this->_e("E-Mail:"); ?></label>
+                                        <label id="emailLabel" for="username">E-Mail:</label>
                                     </td>
                                     <td class="tdData">
                                         <input type="text" class="inputbox" id="email" name="email" style="width: 150px;" />
@@ -56,7 +56,7 @@
 
                                 <tr>
                                     <td class="tdVertical">
-                                        <label id="usernameLabel" for="username">><?php $this->_e("Username:"); ?></label>
+                                        <label id="usernameLabel" for="username">Username:</label>
                                     </td>
                                     <td class="tdData">
                                         <input type="text" class="inputbox" id="username" name="username" style="width: 150px;" />&nbsp;*
@@ -65,7 +65,7 @@
 
                                 <tr>
                                     <td class="tdVertical">
-                                        <label id="passwordLabel" for="password">><?php $this->_e("Password:"); ?></label>
+                                        <label id="passwordLabel" for="password">Password:</label>
                                     </td>
                                     <td class="tdData">
 					<?php if ($this->auth_mode == "ldap"): ?>
@@ -79,7 +79,7 @@
 
                                 <tr>
                                     <td class="tdVertical">
-                                        <label id="retypePasswordLabel" for="retypePassword">><?php $this->_e("Retype Password:"); ?></label>
+                                        <label id="retypePasswordLabel" for="retypePassword">Retype Password:</label>
                                     </td>
                                     <td class="tdData">
 					<?php if ($this->auth_mode == "ldap"): ?>
@@ -92,7 +92,7 @@
 
                                 <tr>
                                     <td class="tdVertical">
-                                        <label id="accessLevelLabel" for="accessLevel">><?php $this->_e("Access Level:"); ?></label>
+                                        <label id="accessLevelLabel" for="accessLevel">Access Level:</label>
                                     </td>
                                     <td class="tdData">
                                         <span id="accessLevelsSpan">
@@ -114,7 +114,7 @@
                                 </tr>
 
                                 <tr>
-                                    <td class="tdVertical">><?php $this->_e("Access Description:"); ?></td>
+                                    <td class="tdVertical">Access Description:</td>
                                     <td class="tdData">
                                         <span id="userAccessStatus">Delete - All lower access, plus the ability to delete information on the system.</span>
                                     </td>
@@ -139,7 +139,7 @@
                                         </td>
                                     </tr>
                                     <tr>
-                                        <td class="tdVertical">><?php $this->_e("Role Description:"); ?></td>
+                                        <td class="tdVertical">Role Description:</td>
                                         <td class="tdData">
                                             <span id="userRoleDesc" style="font-size: smaller">This user is a normal user.</span>
                                         </td>
@@ -176,9 +176,9 @@
                     </tr>
                 </table>
 
-                <input type="submit" class="button" name="submit" id="submit" value="<?php echo _t('Add User'); ?>" />&nbsp;
-                <input type="reset"  class="button" name="reset"  id="reset"  value="<?php echo _t('Reset'); ?>" onclick="document.getElementById('userAccessStatus').innerHTML='Delete - All lower access, plus the ability to delete information on the system.'" />&nbsp;
-                <input type="button" class="button" name="back"   id="back"   value="<?php echo _t('Cancel'); ?>" onclick="javascript:goToURL('<?php echo(CATSUtility::getIndexName()); ?>?m=settings&amp;a=manageUsers');" />
+                <input type="submit" class="button" name="submit" id="submit" value="Add User" />&nbsp;
+                <input type="reset"  class="button" name="reset"  id="reset"  value="Reset" onclick="document.getElementById('userAccessStatus').innerHTML='Delete - All lower access, plus the ability to delete information on the system.'" />&nbsp;
+                <input type="button" class="button" name="back"   id="back"   value="Cancel" onclick="javascript:goToURL('<?php echo(CATSUtility::getIndexName()); ?>?m=settings&amp;a=manageUsers');" />
             </form>
         </div>
     </div>

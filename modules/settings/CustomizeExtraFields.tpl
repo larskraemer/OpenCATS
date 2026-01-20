@@ -224,7 +224,7 @@
                                             '<span style="display:none;" id="addOption<?php echo($index); ?>row' + rowIndex + '">' + 
                                                 'Name:&nbsp;<input id="addOptionInput<?php echo($index); ?>row' + rowIndex + '" style="width:200px;" value="" class="inputbox" /><br />' +
                                                 '<input type="button" class="button" value="Add Field" onclick="addOption<?php echo($index); ?>(document.getElementById(&quot;addOptionInput<?php echo($index); ?>row' + rowIndex + '&quot;).value, document.getElementById(&quot;optionsTable<?php echo($index); ?>row' + rowIndex + '&quot;), &quot;' + rowName + '&quot;);  document.getElementById(&quot;addOption<?php echo($index); ?>row' + rowIndex + '&quot;).style.display=&quot;none&quot;; document.getElementById(&quot;addOptionLine<?php echo($index); ?>row' + rowIndex + '&quot;).style.display=&quot;&quot;;" />&nbsp;' +
-                                                '<input type="button" class="button" value="<?php echo _t('Cancel'); ?>" onclick="document.getElementById(&quot;addOption<?php echo($index); ?>row' + rowIndex + '&quot;).style.display=&quot;none&quot;; document.getElementById(&quot;addOptionLine<?php echo($index); ?>row' + rowIndex + '&quot;).style.display=&quot;&quot;;" />' +
+                                                '<input type="button" class="button" value="Cancel" onclick="document.getElementById(&quot;addOption<?php echo($index); ?>row' + rowIndex + '&quot;).style.display=&quot;none&quot;; document.getElementById(&quot;addOptionLine<?php echo($index); ?>row' + rowIndex + '&quot;).style.display=&quot;&quot;;" />' +
                                             '</span>';
                                         
                                         col.appendChild(addOptionDiv);
@@ -518,7 +518,7 @@
                                         </tr>
                                     </table>                                    
                                     <input type="button" class="button" value="Add Field" onclick="onAddField<?php echo($index); ?>();" />&nbsp;
-                                    <input type="button" class="button" value="<?php echo _t('Cancel'); ?>" onclick="onHideAddArea<?php echo($index); ?>();" />
+                                    <input type="button" class="button" value="Cancel" onclick="onHideAddArea<?php echo($index); ?>();" />
                                 </div>
                                 <div id="addFieldOption<?php echo($index); ?>">
                                     <a href="javascript:void(0);" onclick="document.getElementById('addField<?php echo($index); ?>').style.display=''; document.getElementById('addFieldOption<?php echo($index); ?>').style.display='none'; document.getElementById('addFieldName<?php echo($index); ?>').value=''; document.getElementById('addFieldName<?php echo($index); ?>').focus();">
@@ -532,7 +532,7 @@
                     <?php endforeach; ?>
                     
                 </table>
-                <input type="submit" class="button" value="<?php echo _t('Save'); ?>" style="display:none;" id="buttonSave" />
+                <input type="submit" class="button" value="Save" style="display:none;" id="buttonSave" />
                 <input type="button" name="back" class = "button" value="Done" id="buttonDone"  onclick="document.location.href='<?php echo(CATSUtility::getIndexName()); ?>?m=settings&amp;a=administration';" />
             </form>
         </div>

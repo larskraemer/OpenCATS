@@ -39,8 +39,8 @@
                             <input type="hidden" name="administrationMode" value="changeVersionCheck" />
 
                             <input type="checkbox" name="versionCheck" id="versionCheck"<?php if ($this->versionCheckPref): ?> checked<?php endif; ?> />Enable New Version Check (Recommended)<br /><br />
-                            <input type="submit" name="save" class = "button" value="<?php echo _t('Save'); ?>" />
-                            <input type="button" name="back" class = "button" value="<?php echo _t('Back'); ?>" onclick="document.location.href='<?php echo(CATSUtility::getIndexName()); ?>?m=settings&amp;a=administration';" />
+                            <input type="submit" name="save" class = "button" value="Save" />
+                            <input type="button" name="back" class = "button" value="Back" onclick="document.location.href='<?php echo(CATSUtility::getIndexName()); ?>?m=settings&amp;a=administration';" />
                         </form> -->
                     </td>
                 </tr>

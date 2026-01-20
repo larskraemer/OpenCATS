@@ -49,7 +49,7 @@
                                         <table class="editTableMini" width="235">
                                             <tr>
                                                 <td class="tdVertical">
-                                                    <label><?php $this->_e("Title:"); ?></label>
+                                                    <label id="titleLabel" for="title">Title:</label>
                                                 </td>
                                                 <td class="tdData">
                                                     <input type="text" class="inputbox" name="title" id="title" style="width: 150px" />&nbsp;*
@@ -199,7 +199,7 @@
                                         <table class="editTableMini" width="235">
                                             <tr>
                                                 <td class="tdVertical">
-                                                    <label><?php $this->_e("Title:"); ?></label>
+                                                    <label id="titleLabelEdit" for="title">Title:</label>
                                                 </td>
                                                 <td class="tdData">
                                                     <input type="text" class="inputbox" name="title" id="titleEdit" style="width: 150px" />&nbsp;*

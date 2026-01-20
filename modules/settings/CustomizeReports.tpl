@@ -39,8 +39,8 @@
                                     </td>
                                 </tr>
                             </table>
-                            <input type="submit" class="button" name="submit" id="submit" value="<?php echo _t('Save'); ?>" />&nbsp;
-                            <input type="reset"  class="button" name="reset"  id="reset"  value="<?php echo _t('Reset'); ?>" />&nbsp;
+                            <input type="submit" class="button" name="submit" id="submit" value="Save" />&nbsp;
+                            <input type="reset"  class="button" name="reset"  id="reset"  value="Reset" />&nbsp;
                         </form>
                     </td>
                 </tr>

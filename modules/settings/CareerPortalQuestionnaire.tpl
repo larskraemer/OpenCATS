@@ -83,7 +83,7 @@ div.questionContainerPlainJane { }
                 </tr>
                 <tr id="fromActiveRow">
                     <td class="tdVertical" style="width: 175px;">
-                        <label><?php $this->_e("Status:"); ?></label>
+                        <label for="activeabel" id="activeLabel">Status:</label>
                     </td>
                     <td class="tdData">
                         <select name="isActive" id="isActive" tabindex="3">
@@ -133,7 +133,7 @@ div.questionContainerPlainJane { }
                                                 </div>
                                                 <div id="question<?php echo $questionIndex; ?>TextInput" style="display: none;">
                                                     <input type="text" class="inputbox" id="question<?php echo $questionIndex; ?>TextValue" name="question<?php echo $questionIndex; ?>TextValue" value="<?php echo $question['questionText']; ?>" maxlength="255" style="width: 350px;" />
-                                                    <input type="button" class="button" id="question<?php echo $questionIndex; ?>SaveTextValue" value="<?php echo _t('Save'); ?>" onclick="saveChangeQuestionText(this, true);" />
+                                                    <input type="button" class="button" id="question<?php echo $questionIndex; ?>SaveTextValue" value="Save" onclick="saveChangeQuestionText(this, true);" />
                                                 </div>
                                             </div>
                                         </td>
@@ -191,7 +191,7 @@ div.questionContainerPlainJane { }
                                                                 </div>
                                                                 <div id="question<?php echo $questionIndex; ?>Answer<?php echo $answerIndex; ?>TextInput" style="display: none;">
                                                                     <input type="text" class="inputbox" id="question<?php echo $questionIndex; ?>Answer<?php echo $answerIndex; ?>TextValue" name="question<?php echo $questionIndex; ?>Answer<?php echo $answerIndex; ?>TextValue" value="<?php echo $answer['answerText']; ?>" maxlength="255" style="width: 350px;" />
-                                                                    <input type="button" class="button" id="question<?php echo $questionIndex; ?>Answer<?php echo $answerIndex; ?>SaveTextValue" value="<?php echo _t('Save'); ?>" onclick="saveChangeQuestionText(this, true);" />
+                                                                    <input type="button" class="button" id="question<?php echo $questionIndex; ?>Answer<?php echo $answerIndex; ?>SaveTextValue" value="Save" onclick="saveChangeQuestionText(this, true);" />
                                                                 </div>
                                                             </div>
                                                         </td>
@@ -287,7 +287,7 @@ div.questionContainerPlainJane { }
                                                                             </table>
                                                                             <br />
                                                                             <input type="button" value="Add Action" onclick="submitAction();" />
-                                                                            <input type="button" value="<?php echo _t('Cancel'); ?>" onclick="cancelAddAction();" />
+                                                                            <input type="button" value="Cancel" onclick="cancelAddAction();" />
                                                                         </div>
                                                                     </td>
                                                                 </tr>
@@ -314,7 +314,7 @@ div.questionContainerPlainJane { }
                                                             </table>
                                                             <br />
                                                             <input type="button" value="Add Answer" onclick="submitAnswer();" />
-                                                            <input type="button" value="<?php echo _t('Cancel'); ?>" onclick="cancelAddAnswer();" />
+                                                            <input type="button" value="Cancel" onclick="cancelAddAnswer();" />
                                                         </div>
                                                     </td>
                                                 </tr>
@@ -340,7 +340,7 @@ div.questionContainerPlainJane { }
                                             </table>
                                             <br />
                                             <input type="button" name="addQuestionButton" id="addQuestionButton" value="Add Question" onclick="submitQuestion();" />
-                                            <input type="button" name="cancelAddQuestionButton" id="cancelAddQuestionButton" value="<?php echo _t('Cancel'); ?>" onclick="cancelAddQuestion();" />
+                                            <input type="button" name="cancelAddQuestionButton" id="cancelAddQuestionButton" value="Cancel" onclick="cancelAddQuestion();" />
                                         </div>
                                     </td>
                                 </tr>

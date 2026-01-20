@@ -11,7 +11,7 @@
                     <td width="3%">
                         <img src="images/settings.gif" width="24" height="24" border="0" alt="Settings" style="margin-top: 3px;" />&nbsp;
                     </td>
-                    <td><h2><?php $this->_e("Settings: Login Activity"); ?></h2></td>
+                    <td><h2>Settings: Login Activity</h2></td>
                 </tr>
             </table>
 

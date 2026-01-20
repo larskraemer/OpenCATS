@@ -74,7 +74,7 @@
                                 <?php foreach ($this->categories as $category): ?>
                                     <?php if ($this->data['categories'] == $category[1]): ?>
                                         <tr>
-                                            <td class="vertical">><?php $this->_e("Role:"); ?></td>
+                                            <td class="vertical">Role:</td>
                                             <td class="data">
                                                 <?php $this->_($category[0]); ?> - <?php $this->_($category[2]); ?>
                                             </td>
@@ -101,7 +101,7 @@
                     <img src="images/actions/edit.gif" width="16" height="16" class="absmiddle" style="border: none;" alt="edit user" />&nbsp;Edit
                 </a>
             <?php else: ?>
-                <input type="button" name="back" class = "button" value="<?php echo _t('Back'); ?>" onclick="document.location.href='<?php echo(CATSUtility::getIndexName()); ?>?m=settings';" />
+                <input type="button" name="back" class = "button" value="Back" onclick="document.location.href='<?php echo(CATSUtility::getIndexName()); ?>?m=settings';" />
             <?php endif; ?>
             <br clear="all" />
             <br />

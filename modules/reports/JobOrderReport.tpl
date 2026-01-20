@@ -24,7 +24,7 @@
                 <table class="editTable" width="700">
                     <tr>
                         <td class="tdVertical" style="width: 140px;">
-                            <label><?php $this->_e("Company Name:"); ?></label>
+                            <label id="siteNameLabel" for="siteName">Company Name:</label>
                         </td>
                         <td class="tdData">
                             <input type="text" class="inputbox" name="siteName" id="siteName" value="<?php $this->_($this->reportParameters['siteName']); ?>" style="width: 250px;" />&nbsp;*

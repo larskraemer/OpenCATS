@@ -10,11 +10,11 @@ input.licenseKey { border: 1px solid #0C519D; padding: 5px; width: 500px; }
         <td align="left" valign="top">
             <b>OpenCATS</b> users get everything.</b>
             <ul>
-                <li><?php _te('Freeform text-search across resume\'s.'); ?></li>
-                <li><?php _te('A careers website where applicants can view public jobs and apply.'); ?></li>
-                <li><?php _te('Import your resume documents directly as candidates.'); ?></li>
-                <li><?php _te('Plug-ins and add-ons to make recruiting even easier.'); ?></li>
-                <li><?php _te('Forum and e-mail support.'); ?></li>
+                <li>Freeform text-search across resume's.</li>
+                <li>A careers website where applicants can view public jobs and apply.</li>
+                <li>Import your resume documents directly as candidates.</li>
+                <li>Plug-ins and add-ons to make recruiting even easier.</li>
+                <li>Forum and e-mail support.</li>
             </ul>
 
             <p />
