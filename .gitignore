@@ -27,7 +27,4 @@ backups*/
 *.py
 *.pyc
 *.sh
-config_language.php
 translations.php
-lib/TranslationHelpers.php
-lib/Translations.php
