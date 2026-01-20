@@ -19,7 +19,7 @@
                     <td width="3%">
                         <img src="images/candidate.gif" width="24" height="24" alt="Candidates" style="border: none; margin-top: 3px;" />&nbsp;
                     </td>
-                    <td><h2>Candidates: Home</h2></td>
+                    <td><h2><?php $this->_e("Candidates: Home"); ?></h2></td>
                     <td align="right">
                         <form name="candidatesViewSelectorForm" id="candidatesViewSelectorForm" action="<?php echo(CATSUtility::getIndexName()); ?>" method="get">
                             <input type="hidden" name="m" value="candidates" />
@@ -32,11 +32,11 @@
                                     </td>
                                     <td valign="top" align="right" nowrap="nowrap">
                                         <input type="checkbox" name="onlyMyCandidates" id="onlyMyCandidates" <?php if ($this->dataGrid->getFilterValue('OwnerID') ==  $this->userID): ?>checked<?php endif; ?> onclick="<?php echo $this->dataGrid->getJSAddRemoveFilterFromCheckbox('OwnerID', '==',  $this->userID); ?>" />
-                                        Only My Candidates&nbsp;
+                                        <?php $this->_e("Only My Candidates"); ?>&nbsp;
                                     </td>
                                     <td valign="top" align="right" nowrap="nowrap">
                                         <input type="checkbox" name="onlyHotCandidates" id="onlyHotCandidates" <?php if ($this->dataGrid->getFilterValue('IsHot') == '1'): ?>checked<?php endif; ?> onclick="<?php echo $this->dataGrid->getJSAddRemoveFilterFromCheckbox('IsHot', '==', '\'1\''); ?>" />
-                                        <label for="onlyHotCandidates">Only Hot Candidates</label>&nbsp;
+                                        <label for="onlyHotCandidates"><?php $this->_e("Only Hot Candidates"); ?></label>&nbsp;
                                     </td>
                                     <td valign="top" align="right" nowrap="nowrap">
 	                					<a href="javascript:void(0);" id="exportBoxLink<?= $md5InstanceName ?>" onclick="toggleHideShowControls('<?= $md5InstanceName ?>-tags'); return false;">Filter by tag</a>

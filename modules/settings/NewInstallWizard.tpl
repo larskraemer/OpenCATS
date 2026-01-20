@@ -48,7 +48,7 @@
                         <br />
 
                         <input type="submit" id="submit" name="submit" class="button" value="Submit" />
-                        <input type="reset"  id="reset" name="reset"  class="button" value="Reset" />
+                        <input type="reset"  id="reset" name="reset"  class="button" value="<?php echo _t('Reset'); ?>" />
                     </form>
                 </div>
                 <script type="text/javascript">
@@ -84,7 +84,7 @@
                         <br />
 
                         <input type="submit" id="submit" name="submit" class="button" value="Submit" />
-                        <input type="reset"  id="reset" name="reset"  class="button" value="Reset" />
+                        <input type="reset"  id="reset" name="reset"  class="button" value="<?php echo _t('Reset'); ?>" />
                     </form>
                 </div>
             <?php endif; ?>
@@ -101,7 +101,7 @@
                         <br />
 
                         <input type="submit" id="submit" name="submit" class="button" value="Submit" />
-                        <input type="reset"  id="reset" name="reset"  class="button" value="Reset" />
+                        <input type="reset"  id="reset" name="reset"  class="button" value="<?php echo _t('Reset'); ?>" />
                     </form>
                 </div>
                 <script type="text/javascript">
@@ -118,7 +118,7 @@
                         <br />
 
                         <input type="submit" id="submit" name="submit" class="button" value="Submit" />
-                        <input type="reset"  id="reset" name="reset"  class="button" value="Reset" />
+                        <input type="reset"  id="reset" name="reset"  class="button" value="<?php echo _t('Reset'); ?>" />
                         <br /><br />
                     </form>
                 </div>

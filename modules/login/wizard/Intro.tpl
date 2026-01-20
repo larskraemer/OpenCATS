@@ -5,7 +5,7 @@
         <td>
         <td align="left" valign="top">
             <span style="color: #B67E00;">
-            <b>To help you get started as quickly as possible, we’ve prepared a few easy tasks.</b>
+            <b><?php _te('To help you get started as quickly as possible'); ?>, <?php _te('we\'ve prepared a few easy tasks.'); ?></b>
             </span>
             <p />
             If you have any questions, comments or suggestions about OpenCATS, we’d love to hear your

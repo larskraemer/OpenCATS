@@ -27,7 +27,7 @@
                             <table class="editTable" width="100%" height="285">
                                 <tr>
                                     <td class="tdVertical">
-                                        <label id="firstNameLabel" for="firstName">First Name:</label>
+                                        <label><?php $this->_e("First Name:"); ?></label>
                                     </td>
                                     <td class="tdData">
                                         <input type="text" name="firstName" id="firstName" value="<?php $this->_($this->data['firstName']); ?>" class="inputbox" style="width: 150px" />&nbsp;*
@@ -36,7 +36,7 @@
 
                                 <tr>
                                     <td class="tdVertical">
-                                        <label id="lastNameLabel" for="lastName">Last Name:</label>
+                                        <label><?php $this->_e("Last Name:"); ?></label>
                                     </td>
                                     <td class="tdData">
                                         <input type="text" name="lastName" id="lastName" value="<?php $this->_($this->data['lastName']); ?>" class="inputbox" style="width: 150px" />&nbsp;*
@@ -63,7 +63,7 @@
 
                                 <tr>
                                     <td class="tdVertical">
-                                        <label id="titleLabel" for="title">Title:</label>
+                                        <label><?php $this->_e("Title:"); ?></label>
                                     </td>
                                     <td class="tdData">
                                         <input type="text" name="title" id="title" value="<?php $this->_($this->data['title']); ?>" class="inputbox" style="width: 150px" />&nbsp;*
@@ -72,7 +72,7 @@
 
                                 <tr>
                                     <td class="tdVertical">
-                                        <label id="departmentLabel" for="department">Department:</label>
+                                        <label><?php $this->_e("Department:"); ?></label>
                                     </td>
                                     <td class="tdData">
                                         <select id="departmentSelect" name="department" class="inputbox" style="width: 150px;" onchange="if (this.value == 'edit') { listEditor('Departments', 'departmentSelect', 'departmentsCSV', false); this.value = '(none)'; } if (this.value == 'nullline') { this.value = '(none)'; }">

@@ -24,7 +24,7 @@
                 <table class="editTable" width="700">
                     <tr>
                         <td class="tdVertical">
-                            <label id="titleLabel" for="title">Title:</label>
+                            <label><?php $this->_e("Title:"); ?></label>
                         </td>
                         <td class="tdData">
                             <input type="text" tabindex="1" class="inputbox" id="title" name="title" value="<?php $this->_($this->data['title']); ?>" style="width: 150px;" />&nbsp;*
@@ -92,7 +92,7 @@
 
                     <tr>
                         <td class="tdVertical">
-                            <label id="departmentLabel" for="department">Department:</label>
+                            <label><?php $this->_e("Department:"); ?></label>
                         </td>
                         <td class="tdData">
                             <select id="departmentSelect" name="department" class="inputbox" style="width: 150px;" onchange="if (this.value == 'edit') { listEditor('Departments', 'departmentSelect', 'departmentsCSV', false); this.value = '(none)'; } if (this.value == 'nullline') { this.value = '(none)'; }">
@@ -244,7 +244,7 @@
 
                     <tr>
                         <td class="tdVertical">
-                            <label id="statusLabel" for="status">Status:</label>
+                            <label><?php $this->_e("Status:"); ?></label>
                         </td>
                         <td class="tdData">
                             <select tabindex="8" id="status" name="status" class="inputbox" style="width: 150px;">

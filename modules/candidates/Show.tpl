@@ -20,7 +20,7 @@ use OpenCATS\UI\CandidateDuplicateQuickActionMenu;
                     <td width="3%">
                         <img src="images/candidate.gif" width="24" height="24" border="0" alt="Candidates" style="margin-top: 3px;" />&nbsp;
                     </td>
-                    <td><h2>Candidates: Candidate Details
+                    <td><h2><?php $this->_e("Candidates: Candidate Details"); ?>
                         <?php if($_SESSION['CATS']->getAccessLevel('candidates.duplicates') >= ACCESS_LEVEL_SA): ?>    
                             <?php if(!empty($this->data['isDuplicate'])): ?>
                                 <img src="images/wf_error.gif" alt="duplicate_warning" width="20" height="20" border="0" title="Possible duplicate" />

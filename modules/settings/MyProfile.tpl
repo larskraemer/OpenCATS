@@ -11,14 +11,14 @@
                     <td width="3%">
                         <img src="images/settings.gif" width="24" height="24" border="0" alt="Settings" style="margin-top: 3px;" />&nbsp;
                     </td>
-                    <td><h2>Settings: My Profile</h2></td>
+                    <td><h2><?php $this->_e("Settings: My Profile"); ?></h2></td>
                 </tr>
             </table>
 
-            <p class="note">Profile</p>
+            <p class="note"><?php $this->_e("Profile"); ?></p>
 
             <?php if ($this->isDemoUser): ?>
-                Note that as a demo user, you do not have privileges to modify any settings.
+                <?php $this->_e("Note that as a demo user, you do not have privileges to modify any settings."); ?>
                 <br /><br />
             <?php endif; ?>
 

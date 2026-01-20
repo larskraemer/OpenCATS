@@ -11,11 +11,11 @@
                     <td width="3%">
                         <img src="images/settings.gif" width="24" height="24" border="0" alt="Settings" style="margin-top: 3px;" />&nbsp;
                     </td>
-                    <td><h2>Settings: Administration</h2></td>
+                    <td><h2><?php $this->_e("Settings: Administration"); ?></h2></td>
                 </tr>
             </table>
 
-            <p class="note">Passwords</p>
+            <p class="note"><?php $this->_e("Passwords"); ?></p>
 
             <table class="searchTable" width="100%">
                 <tr>
@@ -30,7 +30,7 @@
                                 </td>
                             </tr>
                         </table>
-                        <input type="button" name="back" class="button" value="Back" onclick="document.location.href='<?php echo(CATSUtility::getIndexName()); ?>?m=settings&amp;a=administration';" />
+                        <input type="button" name="back" class="button" value="<?php echo _t('Back'); ?>" onclick="document.location.href='<?php echo(CATSUtility::getIndexName()); ?>?m=settings&amp;a=administration';" />
                     </td>
                 </tr>
             </table>

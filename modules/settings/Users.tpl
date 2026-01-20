@@ -11,21 +11,21 @@
                     <td width="3%">
                         <img src="images/settings.gif" width="24" height="24" alt="Settings" style="border: none; margin-top: 3px;" />&nbsp;
                     </td>
-                    <td><h2>Settings: User Management</h2></td>
+                    <td><h2><?php $this->_e("Settings: User Management"); ?></h2></td>
                 </tr>
             </table>
 
-            <p class="note">User Management</p>
+            <p class="note"><?php $this->_e("User Management"); ?></p>
 
             <table class="sortable">
                 <thead>
                     <tr>
-                        <th align="left" nowrap="nowrap">First Name</th>
-                        <th align="left" nowrap="nowrap">Last Name</th>
-                        <th align="left">Username</th>
-                        <th align="left" nowrap="nowrap">Access Level</th>
-                        <th align="left" nowrap="nowrap">Last Success</th>
-                        <th align="left" nowrap="nowrap">Last Fail</th>
+                        <th align="left" nowrap="nowrap"><?php $this->_e("First Name"); ?></th>
+                        <th align="left" nowrap="nowrap"><?php $this->_e("Last Name"); ?></th>
+                        <th align="left"><?php $this->_e("Username"); ?></th>
+                        <th align="left" nowrap="nowrap"><?php $this->_e("Access Level"); ?></th>
+                        <th align="left" nowrap="nowrap"><?php $this->_e("Last Success"); ?></th>
+                        <th align="left" nowrap="nowrap"><?php $this->_e("Last Fail"); ?></th>
                     </tr>
                 </thead>
 

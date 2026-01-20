@@ -53,7 +53,7 @@
                 <input type="hidden" name="templateName" value="<?php $this->_($this->templateName); ?>" />
                 <input type="hidden" name="continueEdit" id="continueEdit" value="0" />
                 <p>
-                    <input type="submit" class="button" value="Save">
+                    <input type="submit" class="button" value="<?php echo _t('Save'); ?>">
                     <input type="submit" class="button" value="Save and Continue Editing" onclick="document.getElementById('continueEdit').value='1';">
                 </p>
 
@@ -186,7 +186,7 @@
                     <?php $index++; ?>
                 <?php endforeach; ?>
                 <br />
-                <input type="submit" class="button" value="Save">
+                <input type="submit" class="button" value="<?php echo _t('Save'); ?>">
                 <input type="submit" class="button" value="Save and Continue Editing" onmousedown="document.getElementById('continueEdit').value='1';">
             </form>
         </div>

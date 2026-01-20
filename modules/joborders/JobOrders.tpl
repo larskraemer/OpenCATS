@@ -16,7 +16,7 @@
                     <td width="3%">
                         <img src="images/job_orders.gif" width="24" height="24" border="0" alt="Job Orders" style="margin-top: 3px;" />&nbsp;
                     </td>
-                    <td><h2>Job Orders: Home</h2></td>
+                    <td><h2><?php $this->_e("Job Orders: Home"); ?></h2></td>
 
                     <?php TemplateUtility::printPopupContainer(); ?>
 

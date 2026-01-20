@@ -11,11 +11,11 @@
                     <td width="3%">
                         <img src="images/job_orders.gif" width="24" height="24" border="0" alt="Job Orders" style="margin-top: 3px;" />&nbsp;
                     </td>
-                    <td><h2>Job Orders: Search Job Orders</h2></td>
+                    <td><h2><?php $this->_e("Job Orders: Search Job Orders"); ?></h2></td>
                 </tr>
             </table>
 
-            <p class="note">Search Job Orders</p>
+            <p class="note"><?php $this->_e("Search Job Orders"); ?></p>
 
             <table class="searchTable" id="searchTable">
                 <tr>

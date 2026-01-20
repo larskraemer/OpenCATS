@@ -27,7 +27,7 @@
                             <table class="editTable" width="100%" height="285">
                                 <tr>
                                     <td class="tdVertical">
-                                        <label id="nameLabel" for="name">Company Name:</label>
+                                        <label><?php $this->_e("Company Name:"); ?></label>
                                     </td>
                                     <td class="tdData">
                                         <?php if ($this->data['defaultCompany'] != 1): ?>

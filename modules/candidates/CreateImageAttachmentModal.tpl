@@ -1,6 +1,6 @@
 <?php /* $Id: CreateImageAttachmentModal.tpl 2026 2007-02-27 22:34:05Z brian $ */ ?>
 <?php TemplateUtility::printModalHeader('Candidates', array('modules/candidates/validator.js')); ?>
-    <p class="noteUnsized">Edit Profile Image</p>
+    <p class="noteUnsized"><?php $this->_e("Edit Profile Image"); ?></p>
 
     <?php if (!$this->isFinishedMode): ?>
         <form name="createAttachmentForm" id="createAttachmentForm" action="<?php echo(CATSUtility::getIndexName()); ?>?m=candidates&amp;a=addEditImage" enctype="multipart/form-data" method="post" onsubmit="">

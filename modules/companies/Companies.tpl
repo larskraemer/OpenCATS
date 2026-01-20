@@ -15,7 +15,7 @@
                     <td width="3%">
                         <img src="images/companies.gif" width="24" height="24" border="0" alt="Companies" style="margin-top: 3px;" />&nbsp;
                     </td>
-                    <td><h2>Companies: Home</h2></td>
+                    <td><h2><?php $this->_e("Companies: Home"); ?></h2></td>
                     <td align="right">
                         <form name="companiesViewSelectorForm" id="companiesViewSelectorForm" action="<?php echo(CATSUtility::getIndexName()); ?>" method="get">
                             <input type="hidden" name="m" value="companies" />
@@ -27,11 +27,11 @@
                                     </td>
                                     <td valign="top" align="right" nowrap="nowrap">
                                         <input type="checkbox" name="onlyMyCompanies" id="onlyMyCompanies" <?php if ($this->dataGrid->getFilterValue('OwnerID') ==  $this->userID): ?>checked<?php endif; ?> onclick="<?php echo $this->dataGrid->getJSAddRemoveFilterFromCheckbox('OwnerID', '==',  $this->userID); ?>" />
-                                        <label for="onlyMyCompanies">Only My Companies</label>&nbsp;
+                                        <label for="onlyMyCompanies"><?php $this->_e("Only My Companies"); ?></label>&nbsp;
                                     </td>
                                     <td valign="top" align="right" nowrap="nowrap">
                                         <input type="checkbox" name="onlyHotCompanies" id="onlyHotCompanies" <?php if ($this->dataGrid->getFilterValue('IsHot') == '1'): ?>checked<?php endif; ?> onclick="<?php echo $this->dataGrid->getJSAddRemoveFilterFromCheckbox('IsHot', '==', '\'1\''); ?>" />
-                                        <label for="onlyHotCompanies">Only Hot Companies</label>&nbsp;
+                                        <label for="onlyHotCompanies"><?php $this->_e("Only Hot Companies"); ?></label>&nbsp;
                                     </td>
                                 </tr>
                             </table>

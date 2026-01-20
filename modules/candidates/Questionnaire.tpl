@@ -12,7 +12,7 @@
                     <td width="3%">
                         <img src="images/candidate.gif" width="24" height="24" border="0" alt="Candidates" style="margin-top: 3px;" />&nbsp;
                     </td>
-                    <td><h2>Candidates: Questionnaire Results</h2></td>
+                    <td><h2><?php $this->_e("Candidates: Questionnaire Results"); ?></h2></td>
                </tr>
             </table>
 

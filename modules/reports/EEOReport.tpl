@@ -38,7 +38,7 @@
 
                                 <tr>
                                     <td class="tdVertical" style="width: 75px;">
-                                        <label id="companyNameLabel" for="companyName">Status:</label>
+                                        <label><?php $this->_e("Status:"); ?></label>
                                     </td>
                                     <td class="tdData">
                                        <input type="radio" name="status" value="all" <?php if ($this->modeStatus == 'all'): ?>checked<?php endif; ?>>&nbsp;All<br />

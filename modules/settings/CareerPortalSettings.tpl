@@ -217,7 +217,7 @@
                                                         New Template Name:<br />
                                                         <input name="newName" id="templateName" value="Unnamed" style="width: 160px;" />&nbsp;
                                                         <input type="submit" class="button" value="OK" />
-                                                        <input type="button" class="button" value="Cancel" onclick="hideAllEditingFields();" />
+                                                        <input type="button" class="button" value="<?php echo _t('Cancel'); ?>" onclick="hideAllEditingFields();" />
                                                         <br />
                                                         <br />
                                                     </form>
@@ -246,7 +246,7 @@
                                     <input type="button" class="button" value="Full Screen Preview" onclick="fullScreenPreview();" />
                                     <input type="button" class="button" value="Edit" id="buttonEdit" onclick="window.location.href='<?php echo(CATSUtility::getIndexName()); ?>?m=settings&amp;a=careerPortalTemplateEdit&amp;templateName='+encodeURI(usingID);" />
                                     <input type="button" class="button" value="Edit" id="buttonEditDefault" onclick="showEditDefaultInput();" style="display: none;" />
-                                    <input type="button" class="button" value="Delete" id="buttonDelete" onclick="showDeleteInput();" />
+                                    <input type="button" class="button" value="<?php echo _t('Delete'); ?>" id="buttonDelete" onclick="showDeleteInput();" />
                                     <input type="button" class="button" value="Duplicate" onclick="showDuplicateInput();" />
                                     <input type="button" class="button" value="Set as Active" onclick="setAsActive();" />
                                     <form name="setAsActiveForm" id="setAsActiveForm" action="<?php echo(CATSUtility::getIndexName()); ?>?m=settings&amp;a=onCareerPortalTweak&amp;p=setAsActive" method="post">
@@ -261,7 +261,7 @@
                                             <input name="origName" id="origName" type="hidden" value="" />
                                             <input name="duplicateName" id="duplicateName" style="width: 200px;" />&nbsp;
                                             <input type="submit" class="button" value="OK" />
-                                            <input type="button" class="button" value="Cancel" onclick="hideAllEditingFields();" />
+                                            <input type="button" class="button" value="<?php echo _t('Cancel'); ?>" onclick="hideAllEditingFields();" />
                                         </form>
                                         <br />
                                     </div>
@@ -271,7 +271,7 @@
                                         <form name="careerPortalSettingsForm" id="careerPortalSettingsForm" action="<?php echo(CATSUtility::getIndexName()); ?>?m=settings&amp;a=onCareerPortalTweak&amp;p=delete" method="post">
                                             <input name="delName" id="delName" type="hidden" value="">
                                             <input type="submit" class="button" value="OK">
-                                            <input type="button" class="button" value="Cancel" onclick="hideAllEditingFields();">
+                                            <input type="button" class="button" value="<?php echo _t('Cancel'); ?>" onclick="hideAllEditingFields();">
                                         </form>
                                         <br />
                                     </div>

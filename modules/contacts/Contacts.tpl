@@ -16,7 +16,7 @@
                     <td width="3%">
                         <img src="images/contact.gif" width="24" height="24" border="0" alt="Contacts" style="margin-top: 3px;" />&nbsp;
                     </td>
-                    <td><h2>Contacts: Home</h2></td>
+                    <td><h2><?php $this->_e("Contacts: Home"); ?></h2></td>
                     <td align="right">
                         <form name="contactsViewSelectorForm" id="contactsViewSelectorForm" action="<?php echo(CATSUtility::getIndexName()); ?>" method="get">
                             <input type="hidden" name="m" value="contacts" />
@@ -29,11 +29,11 @@
                                     </td>
                                     <td valign="top" align="right" nowrap="nowrap">
                                         <input type="checkbox" name="onlyMyCompanies" id="onlyMyContacts" <?php if ($this->dataGrid->getFilterValue('OwnerID') ==  $this->userID): ?>checked<?php endif; ?> onclick="<?php echo $this->dataGrid->getJSAddRemoveFilterFromCheckbox('OwnerID', '==',  $this->userID); ?>" />
-                                        <label for="onlyMyContacts">Only My Contacts</label>&nbsp;
+                                        <label for="onlyMyContacts"><?php $this->_e("Only My Contacts"); ?></label>&nbsp;
                                     </td>
                                     <td valign="top" align="right" nowrap="nowrap">
                                         <input type="checkbox" name="onlyHotCompanies" id="onlyHotContacts" <?php if ($this->dataGrid->getFilterValue('IsHot') == '1'): ?>checked<?php endif; ?> onclick="<?php echo $this->dataGrid->getJSAddRemoveFilterFromCheckbox('IsHot', '==', '\'1\''); ?>" />
-                                        <label for="onlyHotContacts">Only Hot Contacts</label>&nbsp;
+                                        <label for="onlyHotContacts"><?php $this->_e("Only Hot Contacts"); ?></label>&nbsp;
                                     </td>
                                 </tr>
                             </table>

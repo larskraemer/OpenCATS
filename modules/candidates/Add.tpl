@@ -16,13 +16,13 @@
                     <td width="3%">
                         <img src="images/candidate.gif" width="24" height="24" alt="Candidates" style="border: none; margin-top: 3px;" />&nbsp;
                     </td>
-                    <td><h2>Candidates: Add Candidate</h2></td>
+                    <td><h2><?php $this->_e("Candidates: Add Candidate"); ?></h2></td>
                 </tr>
             </table>
 
 <?php endif; ?>
 
-            <p class="note<?php if ($this->isModal): ?>Unsized<?php endif; ?>">Basic Information</p>
+            <p class="note<?php if ($this->isModal): ?>Unsized<?php endif; ?>"><?php $this->_e("Basic Information"); ?></p>
 
             <table style="font-weight:bold; border: 1px solid #000; background-color: #ffed1a; padding:5px; display:none; margin-bottom:7px;" width="100%" id="candidateAlreadyInSystemTable">
                 <tr>
@@ -69,7 +69,7 @@
                     <?php endif; ?>
                     <tr>
                         <td class="tdVertical">
-                            <label id="firstNameLabel" for="firstName">First Name:</label>
+                            <label id="firstNameLabel" for="firstName"><?php $this->_e("First Name:"); ?></label>
                         </td>
                         <td class="tdData">
                             <input type="text" tabindex="1" name="firstName" id="firstName" class="inputbox" style="width: 150px" value="<?php if(isset($this->preassignedFields['firstName'])) $this->_($this->preassignedFields['firstName']); ?>" />&nbsp;*
@@ -148,7 +148,7 @@
 
                     <tr>
                         <td class="tdVertical">
-                            <label id="lastNameLabel" for="lastName">Last Name:</label>
+                            <label><?php $this->_e("Last Name:"); ?></label>
                         </td>
                         <td class="tdData">
                             <input type="text" tabindex="2" name="lastName" id="lastName" class="inputbox" style="width: 150px" value="<?php if(isset($this->preassignedFields['lastName'])) $this->_($this->preassignedFields['lastName']); ?>" />&nbsp;*

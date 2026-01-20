@@ -10,7 +10,7 @@
                     <td width="3%">
                         <img src="images/activities.gif" width="24" height="24" alt="Activities" style="border: none; margin-top: 3px;" />&nbsp;
                     </td>
-                    <td><h2>Activities</h2></td>
+                    <td><h2><?php $this->_e("Activities"); ?></h2></td>
                     <td align="right">
                       <?php echo($this->quickLinks); ?>
                     </td>
